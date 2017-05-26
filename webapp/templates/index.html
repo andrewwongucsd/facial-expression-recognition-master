@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js" crossorigin="anonymous"></script>
+
+    <script src="../static/js/jpeg_camera/jpeg_camera_with_dependencies.min.js" type="text/javascript"></script>
+    <script src="../static/js/jpeg_camera/jpeg_camera.js" type="text/javascript"></script>
+
+    <!--script src="../static/js/chartist/chartist.min.js"></script-->
+    <!-- <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css"> -->
+
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script> -->
+    <script src="../static/js/cropper/cropper.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="../static/js/cropper/cropper.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../static/css/style.css">
+    <!--link rel="stylesheet" href="../static/js/chartist/chartist.min.css"-->
+    <script src="../static/js/app.js"></script>
+
+</head>
+<body>
+    <section>
+        <header>
+            <nav class="rad-navigation">
+                  <h1>REAL-TIME FACIAL EXPRESSION CLASSIFIER</h1>
+            </nav>
+        </header>
+    </section>
+    <main>
+        <section>
+            <div class="rad-body-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-18">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">CAMERA PANEL</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="col">
+                                        <div class="col2">
+                                            <div>
+                                                <div id="camera">
+                                                    <div class="placeholder">
+                                                        Your browser does not support camera access.<br> We recommend
+                                                        <a href="https://www.google.com/chrome/" target="_blank">Chrome</a> &mdash; modern, secure, fast browser from Google.<br> It's free.
+                                                    </div>
+
+                                                </div>
+                                                <button id="take_snapshots">Take a snapshot</button>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="col3">
+                                            <div>
+
+                                                <div id="snapshots"></div>
+
+                                                <button id="upload_snapshot">Upload</button><br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-18">
+                            <div id="bar-chart" class="panel panel-default" >
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Visualization</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div id="chart_div" style="height: 250px;"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

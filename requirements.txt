@@ -1,0 +1,8 @@
+numpy
+scipy
+pillow
+h5py
+Flask==0.12
+tensorflow
+keras
+matplotlib
